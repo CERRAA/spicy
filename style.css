@@ -34,13 +34,14 @@ margin-bottom: 30px;
 .click {
 margin-top: 330px;
 }
-.jumbotron-fluid {
-background-image: url("../images/h_img.jpg");
+/* .jumbotron-fluid */
+ .overlay{
+background-image: url("images/h_img.jpg");
 background-size: cover;
 height: 668px;
 }
 #bounce {
-animation: bounce 3s infinite;
+/* animation: bounce 3s infinite; */
 }
 @keyframes bounce {
 0%, 20%, 50%, 80%, 100% {
@@ -62,11 +63,13 @@ margin-top: 30px;
 .services {
 background-image: url("../images/s_image.jpg");
 height: 280px;
+color: whitesmoke;
 }
 .services h1 {
 position: relative;
 top: 30px;
 margin-bottom: 20px;
+color: white;
 }
 .small-overlay {
 background-color: rgba(0, 0, 0, 0.7);
@@ -83,19 +86,19 @@ margin-top: 20px;
 padding-bottom: 50px;
 }
 .contacts {
-background-image: url("../images/c_image.jpg");
-background-size: cover;
+background: url(images/c_image.jpg);
+background-size: 50% 500%;
 }
-.contacts h1 {
+/* .contacts h1 {
 position: relative;
 top: 30px;
-}
+} */
 .text{
 margin-bottom: 20px;
 }
 .contact-overlay {
-background-color: rgba(0, 0, 0, 0.7);
-}
+height: auto !important;
+    }
 .form-control{
 background-color: #66000000;
 color: white;
@@ -171,4 +174,16 @@ display: none;
 }
 #desImg{
 display: initial;
+}
+
+#prod, .prod{
+    cursor: pointer;
+}
+
+
+#foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
 }
